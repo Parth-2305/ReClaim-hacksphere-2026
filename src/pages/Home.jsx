@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import StatCard from '../components/StatCard.jsx'
-import { supabase } from '../lib/supabaseClient.js'
-import { findMatches, MATCH_THRESHOLD } from '../lib/matching.js'
+import StatCard from '../components/common/StatCard.jsx'
+import { supabase } from '../services/supabaseClient.js'
+import { findMatches, MATCH_THRESHOLD } from '../services/matching.js'
 
 const flow = [
   {

@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react'
-import { ToastContext } from '../lib/toastContext.js'
+import { ToastContext } from '../../hooks/toastContext.js'
 
 let idCounter = 0
 

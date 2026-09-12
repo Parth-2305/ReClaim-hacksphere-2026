@@ -1,5 +1,5 @@
-import PageHeader from '../components/PageHeader.jsx'
-import ReportForm from '../components/ReportForm.jsx'
+import PageHeader from '../components/common/PageHeader.jsx'
+import ReportForm from '../components/reports/ReportForm.jsx'
 
 export default function ReportFound() {
   return (

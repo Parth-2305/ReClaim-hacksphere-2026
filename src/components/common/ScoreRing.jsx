@@ -1,4 +1,4 @@
-import { HIGH_CONFIDENCE_THRESHOLD } from '../lib/matching.js'
+import { HIGH_CONFIDENCE_THRESHOLD } from '../../services/matching.js'
 
 const COLORS = {
   high: '#1f6b5c', // pine

@@ -1,12 +1,12 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import PageHeader from '../components/PageHeader.jsx'
-import StatusBadge from '../components/StatusBadge.jsx'
-import ItemThumb from '../components/ItemThumb.jsx'
-import ScoreRing from '../components/ScoreRing.jsx'
-import { supabase } from '../lib/supabaseClient.js'
-import { findMatches } from '../lib/matching.js'
-import { deriveMatchPairStatus } from '../lib/reportStatus.js'
+import PageHeader from '../components/common/PageHeader.jsx'
+import StatusBadge from '../components/common/StatusBadge.jsx'
+import ItemThumb from '../components/common/ItemThumb.jsx'
+import ScoreRing from '../components/common/ScoreRing.jsx'
+import { supabase } from '../services/supabaseClient.js'
+import { findMatches } from '../services/matching.js'
+import { deriveMatchPairStatus } from '../utils/reportStatus.js'
 
 const SIGNAL_LABELS = [
   ['categorySim', 'Category'],

@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import PageHeader from '../components/PageHeader.jsx'
-import StatusBadge from '../components/StatusBadge.jsx'
-import ItemThumb from '../components/ItemThumb.jsx'
-import ScoreRing from '../components/ScoreRing.jsx'
+import PageHeader from '../components/common/PageHeader.jsx'
+import StatusBadge from '../components/common/StatusBadge.jsx'
+import ItemThumb from '../components/common/ItemThumb.jsx'
+import ScoreRing from '../components/common/ScoreRing.jsx'
 import { useToast } from '../hooks/useToast.js'
-import { supabase } from '../lib/supabaseClient.js'
-import { computeMatchScore, checkAnswerMatch } from '../lib/matching.js'
+import { supabase } from '../services/supabaseClient.js'
+import { computeMatchScore, checkAnswerMatch } from '../services/matching.js'
 
 function formatDate(dateStr) {
   if (!dateStr) return 'an unknown date'

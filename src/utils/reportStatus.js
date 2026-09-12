@@ -21,7 +21,7 @@ export const REPORT_STATUS = {
   VERIFIED: 'Verified',
 }
 
-import { getMatchStatus } from './matching.js'
+import { getMatchStatus } from '../services/matching.js'
 
 // Status for a single lost<->found pair (used on Matches cards and the
 // Dashboard's Match activity list) so both pages always agree: a verified or

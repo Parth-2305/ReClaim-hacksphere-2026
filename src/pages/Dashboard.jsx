@@ -1,14 +1,14 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
-import PageHeader from '../components/PageHeader.jsx'
-import StatCard from '../components/StatCard.jsx'
-import StatusBadge from '../components/StatusBadge.jsx'
-import ItemThumb from '../components/ItemThumb.jsx'
-import ScoreRing from '../components/ScoreRing.jsx'
+import PageHeader from '../components/common/PageHeader.jsx'
+import StatCard from '../components/common/StatCard.jsx'
+import StatusBadge from '../components/common/StatusBadge.jsx'
+import ItemThumb from '../components/common/ItemThumb.jsx'
+import ScoreRing from '../components/common/ScoreRing.jsx'
 import { useToast } from '../hooks/useToast.js'
-import { supabase } from '../lib/supabaseClient.js'
-import { findMatches, MATCH_THRESHOLD } from '../lib/matching.js'
-import { REPORT_STATUS, deriveReportStatus, deriveMatchPairStatus } from '../lib/reportStatus.js'
+import { supabase } from '../services/supabaseClient.js'
+import { findMatches, MATCH_THRESHOLD } from '../services/matching.js'
+import { REPORT_STATUS, deriveReportStatus, deriveMatchPairStatus } from '../utils/reportStatus.js'
 
 const FILTERS = [
   { key: 'all', label: 'All' },
